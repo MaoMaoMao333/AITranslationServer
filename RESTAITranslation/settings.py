@@ -25,7 +25,7 @@ SECRET_KEY = '1fc-yi2t!i51gi4tbc0bb9m7p_13y%u4ufqf_)n@m!mzgb-e4g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_ALLOW_ALL = True
 
