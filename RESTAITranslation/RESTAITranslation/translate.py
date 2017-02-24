@@ -59,7 +59,7 @@ tf.app.flags.DEFINE_integer("en_vocab_size", 40000, "English vocabulary size.")
 tf.app.flags.DEFINE_integer("cn_vocab_size", 40000, "Chinese vocabulary size.")
 tf.app.flags.DEFINE_string("train_path", "/data/tv/HouseOfCard", "Training data name")
 tf.app.flags.DEFINE_string("dev_path", "/data/tv/GameOfThrones", "Development data name")
-tf.app.flags.DEFINE_string("train_dir", "/trained_data", "Training directory.")
+tf.app.flags.DEFINE_string("train_dir", "/data/trained_models", "Training directory.")
 tf.app.flags.DEFINE_integer("max_train_data_size", 0,
                             "Limit on the size of training data (0: no limit).")
 tf.app.flags.DEFINE_integer("steps_per_checkpoint", 200,
