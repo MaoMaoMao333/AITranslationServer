@@ -13,10 +13,11 @@ class Translation(models.Model):
     algorithmName = models.CharField(max_length=200, default='')
     score = models.IntegerField(default=-1)
     suggestedAnswer = models.TextField(blank=True)
+    algorithmReload = models.BooleanField()
 
     def save(self, *args, **kwargs):
         algorithm = Algorithms()
-        self.translatedText = algorithm.translate(self.algorithmName, self.algorithmId, self.originalText)
+        self.translatedText = algorithm.translate(self.algorithmName, self.algorithmId, self.originalText, self.algorithmReload)
         super(Translation, self).save(*args, **kwargs)
 
     class Meta:

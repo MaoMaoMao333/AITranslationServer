@@ -9,7 +9,7 @@ class TranslationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Translation
         fields = ('url', 'id', 'originalText', 'translatedText',
-                  'sourceLanguage', 'targetLanguage', 'algorithmId', 'algorithmName', 'score', 'suggestedAnswer')
+                  'sourceLanguage', 'targetLanguage', 'algorithmId', 'algorithmName', 'score', 'suggestedAnswer', 'algorithmReload')
 
 
 class AlgorithmSerializer(serializers.HyperlinkedModelSerializer):    

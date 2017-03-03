@@ -5,7 +5,7 @@ class Algorithms(object):
     def __init__(self):
         self.name = "Algorithm Example"
 
-    def translate(self, algorithmName, algorithmId, text):          
+    def translate(self, algorithmName, algorithmId, text, isReload):          
         if algorithmName == "LSTM":
             res = decode(text)
             return res
