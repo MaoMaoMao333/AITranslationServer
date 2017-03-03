@@ -16,4 +16,4 @@ class AlgorithmSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Algorithm
-        fields = ('url', 'id', 'algorithmId', 'algorithmName', 'algorithmDescription')
+        fields = ('url', 'id', 'algorithmId', 'algorithmName', 'algorithmDescription','algorithmAlias','algorithmPath')

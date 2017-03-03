@@ -27,6 +27,8 @@ class Algorithm(models.Model):
     algorithmId = models.BigIntegerField()
     algorithmName = models.CharField(max_length=200, default='')
     algorithmDescription = models.TextField()
+    algorithmAlias = models.CharField(max_length=200, default='')
+    algorithmPath = models.TextField()
 
     class Meta:
         ordering = ('algorithmId',)
