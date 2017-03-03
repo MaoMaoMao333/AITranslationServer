@@ -13,7 +13,7 @@ class Translation(models.Model):
     algorithmName = models.CharField(max_length=200, default='')
     score = models.IntegerField(default=-1)
     suggestedAnswer = models.TextField(blank=True)
-    algorithmReload = models.BooleanField()
+    algorithmReload = models.NullBooleanField()
 
     def save(self, *args, **kwargs):
         algorithm = Algorithms()
